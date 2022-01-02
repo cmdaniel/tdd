@@ -16,4 +16,6 @@ public class FizzBuzzTest
         var result = fizzBuzz.GetFizzBuzz();
         Assert.Equals(100, result.Count);
     }
+
+    
 }
