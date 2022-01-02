@@ -1,8 +1,9 @@
 using System.Collections.Generic;
+using FizzBuzz.Generator;
 
 namespace FizzBuzz;
 
-public class FizzBuzz
+public class FizzBuzzSeries
 {
 
     public IList<string> GetFizzBuzz(Int16 numOfElements = 100)
@@ -14,4 +15,6 @@ public class FizzBuzz
             .ToList();
         return result;
     }
+
+
 }
