@@ -14,7 +14,7 @@ public class FizzBuzzTest
     {
         var fizzBuzz = new FizzBuzz();
         var result = fizzBuzz.GetFizzBuzz();
-        Assert.Equals(100, result.Count);
+        Assert.AreEqual(100, result.Count);
     }
 
     [Test]
@@ -22,14 +22,15 @@ public class FizzBuzzTest
     {
         var fizzBuzz = new FizzBuzz();
         var result = fizzBuzz.GetFizzBuzz();
-        Assert.Equals("Fizz", result[2]);
+        Assert.AreEqual("Fizz", result[2]);
     }
 
+    [Test]
     public void ShouldHaveFifthItemBuzz()
     {
         var fizzBuzz = new FizzBuzz();
         var result = fizzBuzz.GetFizzBuzz();
-        Assert.Equals("Buzz", result[4]);
+        Assert.AreEqual("Buzz", result[4]);
     }
 
     [Test]
@@ -37,7 +38,7 @@ public class FizzBuzzTest
     {
         var fizzBuzz = new FizzBuzz();
         var result = fizzBuzz.GetFizzBuzz();
-        Assert.Equals("FizzBuzz", result[14]);
+        Assert.AreEqual("FizzBuzz", result[14]);
     }
 
 
